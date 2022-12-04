@@ -1,0 +1,15 @@
+buildscript {
+	repositories {
+		flatDir {
+			dirs '../../build/libs'
+		}
+		jcenter()		
+	}
+	dependencies {
+		classpath group:'com.blogspot.jvalentino.gradle', 
+            name: 'hello-world-theplugin', 
+            version: '1.0.0'
+	}
+}
+
+apply plugin: 'hello-plugin'
